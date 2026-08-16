@@ -1,0 +1,237 @@
+# MyPass
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPass - Privacy Policy</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 25px;
+        }
+        h3, h4 {
+            color: #7f8c8d;
+        }
+        .lang-switcher {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .lang-btn {
+            background-color: #e0e0e0;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        .lang-btn:hover {
+            background-color: #d0d0d0;
+        }
+        .lang-btn.active {
+            background-color: #3498db;
+            color: white;
+        }
+        .policy-content {
+            display: none;
+        }
+        .policy-content.active {
+            display: block;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #eee;
+            margin: 20px 0;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="lang-switcher">
+        <button class="lang-btn active" onclick="setLanguage('pt')">Português</button>
+        <button class="lang-btn" onclick="setLanguage('en')">English</button>
+        <button class="lang-btn" onclick="setLanguage('es')">Español</button>
+    </div>
+
+    <!-- =============== CONTEÚDO EM PORTUGUÊS =============== -->
+    <div id="policy-pt" class="policy-content active">
+        <h1>Política de Privacidade do MyPass</h1>
+        <p>Última atualização: [Data Atual]</p>
+        <p>Bem-vindo ao MyPass. Nós valorizamos profundamente a sua privacidade e a segurança dos seus dados. Esta Política de Privacidade explica como o MyPass ("nós", "nosso" ou "o Aplicativo") lida com suas informações.</p>
+        <p>O MyPass foi projetado como um gerenciador de senhas focado na privacidade. <strong>Nós adotamos uma filosofia de "Conhecimento Zero" (Zero-Knowledge).</strong></p>
+
+        <h2>1. As Informações que NÃO Coletamos</h2>
+        <p>Devido à arquitetura do MyPass, nós <strong>não</strong> coletamos, não visualizamos, não armazenamos e não temos acesso a:</p>
+        <ul>
+            <li>Sua Senha Mestra (Master Password).</li>
+            <li>Seus nomes de usuário, senhas, URLs ou notas armazenados no cofre do aplicativo.</li>
+            <li>Suas informações biométricas (as quais são gerenciadas pelo sistema operacional do seu dispositivo).</li>
+        </ul>
+        <p>Nós não vendemos e nunca venderemos seus dados pessoais a terceiros.</p>
+
+        <h2>2. Informações que Coletamos e Como as Utilizamos</h2>
+        <h3>A. Dados do Cofre (Seus Dados Criptografados)</h3>
+        <p>Suas senhas e dados do cofre são criptografados localmente no seu dispositivo usando protocolos de criptografia de nível militar (ex: AES-256).</p>
+        <ul>
+            <li><strong>Armazenamento Local:</strong> Se você usar apenas o armazenamento local, seus dados nunca sairão do seu dispositivo.</li>
+            <li><strong>Sincronização em Nuvem (Opcional):</strong> Se você ativar a sincronização com serviços de terceiros (como Google Drive, Dropbox, iCloud, ou nossa nuvem proprietária, se aplicável), os dados serão transmitidos e armazenados em formato <strong>criptografado</strong>. Nós (ou o provedor de nuvem) não possuímos a chave para descriptografar esses dados. Apenas você, com sua Senha Mestra, pode descriptografá-los.</li>
+        </ul>
+
+        <h3>B. Dados de Uso e Diagnóstico (Opcional)</h3>
+        <p>Podemos coletar informações anônimas de diagnóstico e falhas (logs) para melhorar a estabilidade do aplicativo. Isso pode incluir tipo de dispositivo, versão do sistema operacional e relatórios de erros técnicos. Esses dados <strong>não</strong> contêm informações pessoais ou dados do seu cofre.</p>
+
+        <h2>3. Segurança dos Dados</h2>
+        <p>A segurança é a base do MyPass. Utilizamos criptografia de ponta a ponta. Sua Senha Mestra é transformada em uma chave de criptografia forte em seu dispositivo e nunca é enviada para nenhum servidor. Se você esquecer sua Senha Mestra, nós <strong>não</strong> poderemos recuperá-la, pois não a conhecemos.</p>
+
+        <h2>4. Seus Direitos (LGPD)</h2>
+        <p>De acordo com a Lei Geral de Proteção de Dados (LGPD) do Brasil, você tem direito a acessar, corrigir, portar ou excluir seus dados. Como não armazenamos seus dados pessoais em nossos servidores (apenas no seu dispositivo ou na sua conta de nuvem privada), você exerce esses direitos gerenciando o próprio aplicativo ou excluindo-o.</p>
+
+        <h2>5. Alterações nesta Política</h2>
+        <p>Podemos atualizar nossa Política de Privacidade periodicamente. Recomendamos que você revise esta página para verificar quaisquer alterações.</p>
+
+        <h2>6. Contato</h2>
+        <p>Se você tiver alguma dúvida sobre esta política, entre em contato conosco:</p>
+        <p><strong>Por e-mail:</strong> [E-MAIL DE CONTATO]</p>
+    </div>
+
+    <!-- =============== CONTEÚDO EM INGLÊS =============== -->
+    <div id="policy-en" class="policy-content">
+        <h1>MyPass Privacy Policy</h1>
+        <p>Last updated: [Current Date]</p>
+        <p>Welcome to MyPass. We deeply value your privacy and the security of your data. This Privacy Policy explains how MyPass ("we", "us", "our", or "the App") handles your information.</p>
+        <p>MyPass is designed as a privacy-focused password manager. <strong>We adopt a "Zero-Knowledge" philosophy.</strong></p>
+
+        <h2>1. Information We Do NOT Collect</h2>
+        <p>Due to the architecture of MyPass, we do <strong>not</strong> collect, view, store, or have access to:</p>
+        <ul>
+            <li>Your Master Password.</li>
+            <li>Your usernames, passwords, URLs, or notes stored within the app vault.</li>
+            <li>Your biometric information (which is managed by your device's operating system).</li>
+        </ul>
+        <p>We do not and will never sell your personal data to third parties.</p>
+
+        <h2>2. Information We Collect and How We Use It</h2>
+        <h3>A. Vault Data (Your Encrypted Data)</h3>
+        <p>Your passwords and vault data are encrypted locally on your device using military-grade encryption protocols (e.g., AES-256).</p>
+        <ul>
+            <li><strong>Local Storage:</strong> If you use local storage only, your data never leaves your device.</li>
+            <li><strong>Cloud Sync (Optional):</strong> If you enable synchronization with third-party services (such as Google Drive, Dropbox, iCloud, or our proprietary cloud, if applicable), the data is transmitted and stored in an <strong>encrypted</strong> format. We (or the cloud provider) do not possess the key to decrypt this data. Only you, with your Master Password, can decrypt it.</li>
+        </ul>
+
+        <h3>B. Usage and Diagnostic Data (Optional)</h3>
+        <p>We may collect anonymous diagnostic and crash information (logs) to improve app stability. This may include device type, operating system version, and technical error reports. This data does <strong>not</strong> contain personal information or vault data.</p>
+
+        <h2>3. Data Security</h2>
+        <p>Security is the core of MyPass. We use end-to-end encryption. Your Master Password is transformed into a strong encryption key on your device and is never sent to any server. If you forget your Master Password, we <strong>cannot</strong> recover it, as we do not know it.</p>
+
+        <h2>4. Your Rights (GDPR/CCPA)</h2>
+        <p>Depending on your location, you may have rights under laws like GDPR or CCPA to access, correct, port, or delete your data. Since we do not store your personal data on our servers (only on your device or your private cloud account), you exercise these rights by managing the app itself or deleting it.</p>
+
+        <h2>5. Changes to This Policy</h2>
+        <p>We may update our Privacy Policy from time to time. We advise you to review this page periodically for any changes.</p>
+
+        <h2>6. Contact Us</h2>
+        <p>If you have any questions about this policy, please contact us:</p>
+        <p><strong>By email:</strong> [CONTACT EMAIL]</p>
+    </div>
+
+    <!-- =============== CONTEÚDO EM ESPANHOL =============== -->
+    <div id="policy-es" class="policy-content">
+        <h1>Política de Privacidad de MyPass</h1>
+        <p>Última actualización: [Fecha Actual]</p>
+        <p>Bienvenido a MyPass. Valoramos profundamente su privacidad y la seguridad de sus datos. Esta Política de Privacidad explica cómo MyPass ("nosotros", "nuestro" o "la Aplicación") maneja su información.</p>
+        <p>MyPass está diseñado como un gestor de contraseñas centrado en la privacidad. <strong>Adoptamos una filosofía de "Conocimiento Cero" (Zero-Knowledge).</strong></p>
+
+        <h2>1. Información que NO recopilamos</h2>
+        <p>Debido a la arquitectura de MyPass, <strong>no</strong> recopilamos, visualizamos, almacenamos ni tenemos acceso a:</p>
+        <ul>
+            <li>Su Contraseña Maestra (Master Password).</li>
+            <li>Sus nombres de usuario, contraseñas, URLs o notas almacenadas en la bóveda de la aplicación.</li>
+            <li>Su información biométrica (la cual es gestionada por el sistema operativo de su dispositivo).</li>
+        </ul>
+        <p>No vendemos ni venderemos nunca sus datos personales a terceros.</p>
+
+        <h2>2. Información que recopilamos y cómo la utilizamos</h2>
+        <h3>A. Datos de la Bóveda (Sus datos cifrados)</h3>
+        <p>Sus contraseñas y datos de la bóveda se cifran localmente en su dispositivo utilizando protocolos de cifrado de grado militar (ej: AES-256).</p>
+        <ul>
+            <li><strong>Almacenamiento Local:</strong> Si utiliza solo el almacenamiento local, sus datos nunca saldrán de su dispositivo.</li>
+            <li><strong>Sincronización en la Nube (Opcional):</strong> Si activa la sincronización com servicios de terceros (como Google Drive, Dropbox, iCloud, o nuestra nube propietaria, si corresponde), los datos se transmitirán y almacenarán en formato <strong>cifrado</strong>. Nosotros (o el proveedor de la nube) no poseemos la clave para descifrar estos datos. Solo usted, con su Contraseña Maestra, puede descifrarlos.</li>
+        </ul>
+
+        <h3>B. Datos de Uso y Diagnóstico (Opcional)</h3>
+        <p>Podemos recopilar información anónima de diagnóstico y fallos (logs) para mejorar la estabilidad de la aplicación. Esto puede incluir el tipo de dispositivo, la versión del sistema operativo y informes de errores técnicos. Estos datos <strong>no</strong> contienen información personal ni datos de su bóveda.</p>
+
+        <h2>3. Seguridad de los Datos</h2>
+        <p>La seguridad es la base de MyPass. Utilizamos cifrado de extremo a extremo. Su Contraseña Maestra se transforma en una clave de cifrado fuerte en su dispositivo y nunca se envía a ningún servidor. Si olvida su Contraseña Maestra, <strong>no</strong> podemos recuperarla, ya que no la conocemos.</p>
+
+        <h2>4. Sus Derechos</h2>
+        <p>Dependiendo de su ubicación, puede tener derechos bajo leyes internacionales para acceder, corregir, portar o eliminar sus datos. Dado que no almacenamos sus datos personales en nuestros servidores (solo en su dispositivo o en su cuenta de nube privada), usted ejerce estos derechos gestionando la propia aplicación o eliminándola.</p>
+
+        <h2>5. Cambios en esta Política</h2>
+        <p>Podemos actualizar nuestra Política de Privacidade periódicamente. Le recomendamos que revise esta página para verificar cualquier cambio.</p>
+
+        <h2>6. Contacto</h2>
+        <p>Si tiene alguna pregunta sobre esta política, contáctenos:</p>
+        <p><strong>Por correo electrónico:</strong> [CORREO ELECTRÓNICO DE CONTACTO]</p>
+    </div>
+
+    <hr>
+    <footer>
+        <p>&copy; [Ano] [SEU NOME OU EMPRESA]. Todos os direitos reservados.</p>
+    </footer>
+</div>
+
+<script>
+    function setLanguage(lang) {
+        // Esconder todos os conteúdos
+        const contents = document.querySelectorAll('.policy-content');
+        contents.forEach(content => content.classList.remove('active'));
+
+        // Desativar todos os botões
+        const buttons = document.querySelectorAll('.lang-btn');
+        buttons.forEach(btn => btn.classList.remove('active'));
+
+        // Mostrar o conteúdo selecionado
+        document.getElementById('policy-' + lang).classList.add('active');
+
+        // Ativar o botão selecionado
+        const activeButton = document.querySelector(`[onclick="setLanguage('${lang}')"]`);
+        activeButton.classList.add('active');
+        
+        // Atualiza a tag lang do HTML para acessibilidade
+        document.documentElement.lang = (lang === 'pt') ? 'pt-BR' : lang;
+    }
+</script>
+
+</body>
+</html>
